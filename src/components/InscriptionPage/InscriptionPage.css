@@ -1,0 +1,103 @@
+.inscription-page {
+  display: flex;
+  justify-content: center;
+}
+
+.inscription-page .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: min(375px, 100%);
+  width: fit-content;
+}
+
+.inscription-page .header {
+  position: relative;
+  width: 100%;
+  height: 88px;
+}
+
+.inscription-page .header svg {
+  position: absolute;
+  left: 16px;
+  top: 48px;
+}
+
+.inscription-page .header .label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 54px;
+  width: 10px;
+}
+
+.inscription-page .inscription-content {
+  margin-bottom: 24px;
+}
+
+.inscription-page .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: calc(100% - 32px);
+  margin-left: 17px;
+  margin-right: 15px;
+  overflow-wrap: anywhere;
+}
+
+.inscription-page .details .number {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 17px;
+}
+
+.inscription-page .details hr {
+  border: 2px solid rgba(36, 37, 44, 1);
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.inscription-page .details label {
+  font-size: 12px;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  margin-bottom: 8px;
+}
+
+.inscription-page .details div {
+  line-height: 19px;
+}
+
+.inscription-page .details div.id {
+  margin-bottom: 24px;
+}
+
+.inscription-page .details div.address {
+  margin-bottom: 48px;
+}
+
+.inscription-page .details .attributes {
+  width: 100%;
+}
+
+.inscription-page .details .attributes div:not(.title) {
+  width: 100%;
+  background: rgba(36, 37, 44, 1);
+  border-radius: 8px;
+  padding: 11px 16px 12px 12px;
+  margin-bottom: 26px;
+}
+
+.inscription-page .details .attributes .title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 33px;
+}
