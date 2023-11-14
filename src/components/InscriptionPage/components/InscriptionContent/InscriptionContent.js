@@ -12,16 +12,18 @@ export const InscriptionContent = ({ inscription }) => {
 
   if (isPlainText) {
     content = ready ? (
-      <pre>{text}</pre>
+      <pre data-testid='content-text'>{text}</pre>
     ) : null;
   } else {
     content = (
-      <object type={inscription.mime_type} data={`https://ord.xverse.app/content/${inscription.id}`}>Failed to load inscription</object>
+      <object type={inscription.mime_type} data={`https://ord.xverse.app/content/${inscription.id}`} data-testid='content-object'>
+        Failed to load inscription
+      </object>
     );
   }
 
   return (
-    <div className='inscription-content'>
+    <div className='inscription-content' data-testid='inscription-content'>
       {content}
     </div>
   );
